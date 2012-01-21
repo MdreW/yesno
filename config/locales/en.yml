@@ -1,0 +1,17 @@
+en:
+  yesno:
+    default:
+      t: "true"
+      f: "false"
+    tf:
+      t: "true"
+      f: "false"
+    yn:
+      t: "yes"
+      f: "no"
+    mf:
+      t: "male"
+      f: "female"
+    act:
+      t: "active"
+      f: "unactive"
