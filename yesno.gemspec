@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Yesno::VERSION
   s.authors     = ["Andrea Ranaldi"]
   s.email       = ["andrea.ranaldi@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Yesno."
-  s.description = "TODO: Description of Yesno."
+  s.homepage    = "https://github.com/MdreW/yesno"
+  s.summary     = "Boolean helper for rails"
+  s.description = "Boolean helper fot rails"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
