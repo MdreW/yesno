@@ -14,4 +14,4 @@ en:
       f: "female"
     act:
       t: "active"
-      f: "unactive"
+      f: "inactive"

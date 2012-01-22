@@ -1,0 +1,18 @@
+fr:
+  yesno:
+    default:
+      t: "vrai"
+      f: "false"
+    tf:
+      t: "vrai"
+      f: "false"
+    yn:
+      t: "oui"
+      f: "pas"
+    mf:
+      t: "masculins"
+      f: "féminine"
+    act:
+      t: "actifs"
+      f: "inactives"
+

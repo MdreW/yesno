@@ -1,0 +1,18 @@
+it:
+  yesno:
+    default:
+      t: "vero"
+      f: "falso"
+    tf:
+      t: "vero"
+      f: "falso"
+    yn:
+      t: "si"
+      f: "no"
+    mf:
+      t: "maschio"
+      f: "femmina"
+    act:
+      t: "attivo"
+      f: "disattivo"
+
