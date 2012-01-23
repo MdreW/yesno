@@ -4,7 +4,12 @@ Yesno is a simple utility for boolean case.
 
 "yesno" is a simple aid for the Boolean case. "yesno" transforms the answers to true / false in various interpretations possible (yes / no, male / female, active / inactive). To use I18n translations and is provided with translations in Italian, English and French.
 
-example:
+== Install
+
+  gem install yesno
+  rails generate yesno:install
+
+== Example:
 
 if @article.active is false
 
