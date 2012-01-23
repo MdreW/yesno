@@ -7,36 +7,38 @@ Yesno is a simple utility for boolean case.
 example:
 
 if @article.active is false
+
 # yesno("act", @article.active) -> "inactive"
 
 if @person.sex is true
+
 # yesno("mf", @person.sex) -> "male"
 
 To add new features just edit the file yesno.#{lang}.yml and add new implementations:
 
-it:
-  yesno:
-    default:
-      t: "vero"
-      f: "falso"
-    tf:
-      t: "vero"
-      f: "falso"
-    yn:
-      t: "si"
-      f: "no"
-    mf:
-      t: "maschio"
-      f: "femmina"
-    act:
-      t: "attivo"
-      f: "disattivo"
+  it:
+    yesno:
+      default:
+        t: "vero"
+        f: "falso"
+      tf:
+        t: "vero"
+        f: "falso"
+      yn:
+        t: "si"
+        f: "no"
+      mf:
+        t: "maschio"
+        f: "femmina"
+      act:
+        t: "attivo"
+        f: "disattivo"
 
-the type of translation is the third indentation
-the translation is the fourth indentation
+- the type of translation is the third indentation
+- the translation is the fourth indentation
 
 With this simple rule is possible to implement new uses
 
 This project rocks and uses MIT-LICENSE.
 
-scrivetemi se avete nuove implementazioni o traduzioni
+email me if you have new implementations or translations
