@@ -4,6 +4,7 @@ Yesno is a simple utility for boolean case.
 
 "yesno" is a simple aid for the Boolean case. "yesno" transforms the answers to true / false in various interpretations possible (yes / no, male / female, active / inactive). To use I18n translations and is provided with translations in Italian, English and French.
 
+
 == Install
 
   gem install yesno
@@ -13,34 +14,44 @@ Yesno is a simple utility for boolean case.
 
 if @article.active is false
 
-# yesno("act", @article.active) -> "inactive"
+# yesno(@article.active, :type => "atc") -> "inactive"
 
 if @person.sex is true
 
-# yesno("mf", @person.sex) -> "male"
+# yesno(@person.sex, :type => "mf") -> "male"
+
+
+the options are
+  :type => "tipology"
+  :female => true/false
+  :pluralize => true/false
 
 To add new features just edit the file yesno.#{lang}.yml and add new implementations:
 
-  it:
-    yesno:
-      default:
-        t: "vero"
-        f: "falso"
-      tf:
-        t: "vero"
-        f: "falso"
-      yn:
-        t: "si"
-        f: "no"
-      mf:
-        t: "maschio"
-        f: "femmina"
-      act:
-        t: "attivo"
-        f: "disattivo"
+it:
+  yesno:
+    default:
+      smt: "vero"
+      smf: "falso"
+      sft: "vera"
+      sff: "falsa"
+      pmt: "veri"
+      pmf: "falsi"
+      pft: "vere"
+      pff: "false"
+    yn:
+      smt: "si"
+      smf: "no"
+    ecc.....
 
 - the type of translation is the third indentation
 - the translation is the fourth indentation
+- the name of the traslation (smt, smf, ecc.) is the declination.
+
+smt single male true
+smf single male false
+..
+pff pural female false
 
 With this simple rule is possible to implement new uses
 
