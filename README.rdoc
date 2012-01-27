@@ -10,15 +10,19 @@ Yesno is a simple utility for boolean case.
   gem install yesno
   rails generate yesno:install
 
-== Example:
+== standard implementation
+
+=== Example:
 
 if @article.active is false
 
+# yesno(@article.active) -> "false"
 # yesno(@article.active, :type => "atc") -> "inactive"
 
 if @person.sex is true
 
 # yesno(@person.sex, :type => "mf") -> "male"
+# yesno(@person.sex, :type => "mf", :pluralize => true) -> "man"
 
 
 the options are
@@ -26,23 +30,51 @@ the options are
   :female => true/false
   :pluralize => true/false
 
+the types are
+  "default" (true/false)
+  "yn" (yes/no)
+  "mf" (male/female)
+  "act" (active/inactive)
+
+== fast implementation
+Fyesno is a more fast implementation of yesno. 
+Fyesno" solves the conversion with a single "if" using the options to address directly the translation.
+
+# fyesno(to_validate, type, option)
+
+where default type is "default" and default option is "ms".
+"option" is a string containing the two letters to this standard:
+  "ms" masculine singular
+  "mp" masculine plural
+  "fs" feminine singular
+  "fp" feminine plural
+
+=== Example
+
+if @var.test is true
+# fyesno(@var.test) -> "true"
+# fyesno(@var.test, "mf", "mp") -> "man"
+# fyesno(@var.test, "act", "fp") -> "actives"
+
+== extend the types
+
 To add new features just edit the file yesno.#{lang}.yml and add new implementations:
 
-it:
-  yesno:
-    default:
-      smt: "vero"
-      smf: "falso"
-      sft: "vera"
-      sff: "falsa"
-      pmt: "veri"
-      pmf: "falsi"
-      pft: "vere"
-      pff: "false"
-    yn:
-      smt: "si"
-      smf: "no"
-    ecc.....
+  it:
+    yesno:
+      default:
+        smt: "vero"
+        smf: "falso"
+        sft: "vera"
+        sff: "falsa"
+        pmt: "veri"
+        pmf: "falsi"
+        pft: "vere"
+        pff: "false"
+      yn:
+        smt: "si"
+        smf: "no"
+      ecc.....
 
 - the type of translation is the third indentation
 - the translation is the fourth indentation
