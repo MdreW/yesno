@@ -1,18 +1,40 @@
 fr:
   yesno:
     default:
-      t: "vrai"
-      f: "false"
-    tf:
-      t: "vrai"
-      f: "false"
+      smt: "vero"
+      smf: "falso"
+      sft: "vera"
+      sff: "falsa"
+      pmt: "veri"
+      pmf: "falsi"
+      pft: "vere"
+      pff: "false"
     yn:
-      t: "oui"
-      f: "pas"
+      smt: "si"
+      smf: "no"
+      sft: "si"
+      sff: "no"
+      pmt: "si"
+      pmf: "no"
+      pft: "si"
+      pff: "no"
     mf:
-      t: "masculins"
-      f: "féminine"
+      smt: "maschio"
+      smf: "femmina"
+      sft: "maschio"
+      sff: "femmina"
+      pmt: "maschi"
+      pmf: "femmine"
+      pft: "maschi"
+      pff: "femmine"
     act:
-      t: "actifs"
-      f: "inactives"
+      smt: "attivo"
+      smf: "inattivo"
+      sft: "attiva"
+      sff: "inattiva"
+      pmt: "attivi"
+      pmf: "inattivi"
+      pft: "attive"
+      pff: "inattive"
+
 
