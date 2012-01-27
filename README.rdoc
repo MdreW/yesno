@@ -51,10 +51,10 @@ where default type is "default" and default option is "ms".
 
 === Example
 
-if @var.test is true
-# fyesno(@var.test) -> "true"
-# fyesno(@var.test, "mf", "mp") -> "man"
-# fyesno(@var.test, "act", "fp") -> "actives"
+  if @var.test is true
+  # fyesno(@var.test) -> "true"
+  # fyesno(@var.test, "mf", "mp") -> "man"
+  # fyesno(@var.test, "act", "fp") -> "actives"
 
 == extend the types
 
