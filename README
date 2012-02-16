@@ -16,8 +16,8 @@ Yesno is a simple utility for boolean case.
 
 if @article.active is false
 
-# yesno(@article.active) -> "false"
-# yesno(@article.active, :type => "atc") -> "inactive"
+  yesno(@article.active) -> "false"
+  yesno(@article.active, :type => "atc") -> "inactive"
 
 if @person.sex is true
 
