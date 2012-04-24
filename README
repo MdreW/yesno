@@ -22,7 +22,7 @@ if @article.active is false
 if @person.sex is true
 
 # yesno(@person.sex, :type => "mf") -> "male"
-# yesno(@person.sex, :type => "mf", :pluralize => true) -> "man"
+## yesno(@person.sex, :type => "mf", :pluralize => true) -> "man"
 
 
 the options are
